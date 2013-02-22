@@ -1,5 +1,7 @@
 class IcalMap
   def self.hi
-    "Hello world"
+    IcalMap::IcalUtils.getCalendarsFromFile "/home/benjamin/Downloads/TerrificTerrariums.ics"
   end
 end
+
+require 'ical_map/ical_utils'
