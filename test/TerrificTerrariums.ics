@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+CALSCALE:GREGORIAN
+PRODID:-//Refresh Web Development//Helios Calendar//EN
+X-FROM-URL:http://www.hawaiinaturecenter.org/calendar/events/index.php?com=details&eID=44
+X-WR-RELCALID:Hawaii Nature Center Events Calendar Terrific Terrariums 20130224T133000
+X-WR-TIMEZONE:America/Mexico_City
+X-WR-CALNAME:Terrific Terrariums
+BEGIN:VEVENT
+URL;VALUE=URI:http://www.hawaiinaturecenter.org/calendar/events/index.php?com=detail&eID=44
+DTSTART:20130224T133000
+DTEND:20130224T153000
+SUMMARY:Terrific Terrariums
+DESCRIPTION:Come into the forest as we explore the plants and animals that live there. Recreate the splendor in miniature as you put together your own beautiful terrarium. Bring a clear one gallon container or jar (glass or plastic). Age: 3 years and up RESERVATION REQUIRED.  Call 955-0100\, ext. 118\n______________________________\nThis Event Downloaded From a Helios Calendar Powered Site
+LOCATION:Hawaii Nature Center - Oahu - 2131 Makiki Heights Drive \, Honolulu\, HI US 96822
+CATEGORIES:Hawaii Nature Center Events Calendar Events
+PRIORITY:0
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
