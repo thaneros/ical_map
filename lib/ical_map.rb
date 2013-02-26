@@ -1,6 +1,8 @@
 class IcalMap
-  def self.hi
-    IcalMap::IcalUtils.getCalendarsFromFile "/home/benjamin/Downloads/TerrificTerrariums.ics"
+  def self.get_map (file = nil)
+    if !file.nil?
+      IcalMap::IcalUtils.get_events_from_file file
+    end
   end
 end
 

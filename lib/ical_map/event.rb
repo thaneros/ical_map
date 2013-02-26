@@ -5,9 +5,24 @@ class IcalMap::Event
     @title = calendar_event.summary
     @location = calendar_event.location
     @description = calendar_event.description
-    @lat = nil
-    @lng = nil
+    get_lat_lng_from_location location
     @dtstart = calendar_event.dtstart
     @dtend = calendar_event.dtend
   end
+
+  def get_lat_lng_from_location (location)
+    RestClient.get("http://maps.googleapis.com/maps/api/geocode/json", {:params =>  {:address => location, :sensor => "false"}}) do |response, request, result, &block|
+      case response.code
+      when 200
+        resh = JSON.parse response
+        if resh["status"] == "OK"
+          @lat = resh["results"][0]["geometry"]["location"]["lat"]
+          @lng = resh["results"][0]["geometry"]["location"]["lng"]
+        end
+      end
+    end
+  end
 end
+
+require 'rest_client'
+require 'json'
