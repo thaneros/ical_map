@@ -5,3 +5,4 @@ class IcalMap
 end
 
 require 'ical_map/ical_utils'
+require 'ical_map/event'
